@@ -1,0 +1,4 @@
+.idea
+__pycache__
+stock_data/*.csv
+.DS_Store
