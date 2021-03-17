@@ -12,12 +12,9 @@ def download_files():
         metadata = json.load(f)
 
     name = metadata['name']
-    index = metadata['symbol']
     components_list = metadata['components']
     start_date = metadata['start_date']
     end_date = metadata['end_date']
-
-    components_list.append(index)
 
     if not Path(OUT_PATH).exists():
         os.mkdir(OUT_PATH)
